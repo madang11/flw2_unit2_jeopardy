@@ -32,6 +32,12 @@ let categories = [
  *      TRIVIA: Why is it called UPPERCASE? 
  *      Answer: https://bit.ly/3gOwrga
  */
-function renderCategories() {
-    // Add code here
-}
+
+    function renderCategories() {
+        for (let category of categories) {
+            let categoryHtml = "<div class='category'>";
+            categoryHtml += "<div class='category-cell'>" + category.toUpperCase() + "</div>";
+            categoryHtml += "</div>";
+            $("#categories").append(categoryHtml);
+        }
+    }
